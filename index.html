@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141320">
+  <meta name="description" content="Browse and play original instrumental loops in a static music player.">
+  <title>Pulse Room | Music Player</title>
+  <link rel="stylesheet" href="./spotify.css">
+  <script src="./player.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to music</a>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#home"><span aria-hidden="true">◒</span> Pulse Room</a>
+      <nav aria-label="Music">
+        <a href="#home">Home</a>
+        <a href="#search">Search</a>
+        <a href="#library">Your Library</a>
+      </nav>
+    </aside>
+    <main id="main">
+      <header class="hero" id="home">
+        <h1>Find your next loop.</h1>
+        <p>Play an instrumental and save your favorites.</p>
+      </header>
+      <section aria-labelledby="discover-heading">
+        <h2 id="discover-heading">Discover</h2>
+        <div id="search">
+          <label for="track-search">Search tracks</label>
+          <input id="track-search" type="search" placeholder="Search by title or mood" autocomplete="off">
+          <p id="search-status" role="status"></p>
+        </div>
+        <div id="tracks" class="cards"></div>
+      </section>
+      <section id="library" aria-labelledby="library-heading">
+        <h2 id="library-heading">Your Library</h2>
+        <p id="empty-library">Save a track to add it here.</p>
+        <div id="saved-tracks" class="cards"></div>
+      </section>
+      <noscript><p>Enable JavaScript to browse and play the tracks.</p></noscript>
+    </main>
+    <footer class="player" aria-label="Music player">
+      <div>
+        <strong id="now-playing">Choose a track</strong>
+        <p id="player-status" role="status"></p>
+      </div>
+      <div class="audio-controls">
+        <button id="previous" type="button" aria-label="Previous track" disabled>‹</button>
+        <audio id="audio" controls preload="none" aria-label="Track playback"></audio>
+        <button id="next" type="button" aria-label="Next track" disabled>›</button>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
