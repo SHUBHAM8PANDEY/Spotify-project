@@ -1,6 +1,6 @@
 # Spotify-project
 
-A static Spotify-inspired layout built with HTML and CSS. It includes the original sidebar, library, music cards, and player layout. The player controls are a visual demo. Card artwork is drawn in CSS.
+A static Spotify-inspired layout built with HTML and CSS. It includes the original sidebar, library, music cards, and player layout. The bottom player uses native HTML audio controls for an original instrumental. Search, playlists, podcasts and charts open on Spotify. Card artwork is drawn in CSS.
 
 Open `index.html` in a browser. The old `Spotify.html` link forwards to it.
 
