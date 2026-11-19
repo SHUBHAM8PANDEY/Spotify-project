@@ -1,57 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#141320">
-  <meta name="description" content="Browse and play original instrumental loops in a static music player.">
-  <title>Pulse Room | Music Player</title>
-  <link rel="stylesheet" href="./spotify.css">
-  <script src="./player.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone | Web Player</title>
+    <link rel="stylesheet" href="./spotify.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to music</a>
-  <div class="layout">
+    <div class="main">
     <aside class="sidebar">
-      <a class="brand" href="#home"><span aria-hidden="true">◒</span> Pulse Room</a>
-      <nav aria-label="Music">
-        <a href="#home">Home</a>
-        <a href="#search">Search</a>
-        <a href="#library">Your Library</a>
-      </nav>
-    </aside>
-    <main id="main">
-      <header class="hero" id="home">
-        <h1>Find your next loop.</h1>
-        <p>Play an instrumental and save your favorites.</p>
-      </header>
-      <section aria-labelledby="discover-heading">
-        <h2 id="discover-heading">Discover</h2>
-        <div id="search">
-          <label for="track-search">Search tracks</label>
-          <input id="track-search" type="search" placeholder="Search by title or mood" autocomplete="off">
-          <p id="search-status" role="status"></p>
+        <div class="nav">
+            <div class="nav-option" style="opacity: 1;">
+            <span class="symbol" aria-hidden="true">⌂</span>
+            <a href="#home">Home</a>
+            </div>
+
+            <div class="nav-option">
+                <span class="symbol" aria-hidden="true">⌕</span>
+                <a href="#trending">Search</a>
+
+            </div>
+
         </div>
-        <div id="tracks" class="cards"></div>
-      </section>
-      <section id="library" aria-labelledby="library-heading">
-        <h2 id="library-heading">Your Library</h2>
-        <p id="empty-library">Save a track to add it here.</p>
-        <div id="saved-tracks" class="cards"></div>
-      </section>
-      <noscript><p>Enable JavaScript to browse and play the tracks.</p></noscript>
+        <div class="library" id="library">
+            <div class="opstion ">
+                 <div class="library nav-option">
+            <span class="symbol" aria-hidden="true">▥</span>
+            <a href="#library">Your Library</a>
+            </div>
+            <div class="icon">
+                <span class="symbol" aria-hidden="true">+</span>
+                <span class="symbol" aria-hidden="true">→</span>
+            </div>
+
+            </div>
+            <div class="lib-box">
+                <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we’ll help you.</p>
+            <button class="badge">Create playlist</button>
+            </div>
+            </div>
+                 <div class="lib-box">
+                <div class="box">
+            <p class="box-p1">Let’s find some podcasts to follow</p>
+            <p class="box-p2">We’ll keep you updated on new episodes.</p>
+            <button class="badge">Browse podcasts</button>
+            </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main-content" id="home">
+        <div class="sticky-nav">
+        <div class="sticky-nav-icon">
+                  <span class="symbol" aria-hidden="true">‹</span>
+        <span class="symbol hide" aria-hidden="true">›</span>
+        </div>
+        <div class="sticky-nav-opstion">
+            <button class="badge nav-item hide">Explore Premium</button>
+        <button class="badge nav-item dark-badge"><span class="symbol" aria-hidden="true">↓</span> Install App</button>
+        <span class="symbol nav-item" aria-hidden="true">◉</span>
+        </div>
+        </div>
+
+         <h2>Recently played</h2>
+              <div class="cards-container">
+                <div class="card">
+                    <div class="card-img cover-1" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+              </div>
+
+
+               <h2 id="trending">Trending now near you</h2>
+             <div class="cards-container">
+                <div class="card">
+                    <div class="card-img cover-2" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-6" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img cover-3" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-4" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+
+
+
+             </div>
+              <h2>Featured charts</h2>
+              <div class="cards-container">
+                <div class="card">
+                    <div class="card-img cover-2" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img cover-5" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+              </div>
+              <div class="card">
+                    <div class="card-img cover-6" aria-hidden="true"><span>TOP<br>50</span></div>
+                    <p class="card-title">Top 50 – Global</p>
+                    <p class="card-info">Your daily update of the most played tracks.</p>
+              </div>
+              </div>
+              <div class="fotter">
+                <div class="line"></div>
+              </div>
     </main>
-    <footer class="player" aria-label="Music player">
-      <div>
-        <strong id="now-playing">Choose a track</strong>
-        <p id="player-status" role="status"></p>
-      </div>
-      <div class="audio-controls">
-        <button id="previous" type="button" aria-label="Previous track" disabled>‹</button>
-        <audio id="audio" controls preload="none" aria-label="Track playback"></audio>
-        <button id="next" type="button" aria-label="Next track" disabled>›</button>
-      </div>
+    <footer class="music-player" aria-label="Player layout preview">
+        <div class="album"></div>
+        <div class="player">
+            <div class="player-control">
+                <span class="player-control-icon" aria-hidden="true">⇄</span>
+                <span class="player-control-icon" aria-hidden="true">⏮</span>
+                <span class="player-control-icon play-icon" aria-hidden="true">▶</span>
+                <span class="player-control-icon" aria-hidden="true">⏭</span>
+                <span class="player-control-icon" aria-hidden="true">↻</span>
+            </div>
+            <div class="playback-bar">
+            <span class="curr-time">00:00 </span>
+            <input type="range" min="0" max="100" class="progress-bar" step="1" value="0" aria-label="Preview progress" >
+             <span class="tot-time">03:33 </span>
+            </div>
+        </div>
+        <div class="control"></div>
     </footer>
-  </div>
+    </div>
+
 </body>
 </html>
